@@ -4,8 +4,8 @@ import styled, { injectGlobal } from 'styled-components';
 
 import Timer from './src/components/Timer';
 
-import { createStore } from 'redux';
 import reducers from './src/reducers';
+import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
 const store = createStore(reducers);

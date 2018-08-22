@@ -1,16 +1,16 @@
 import * as types from './ActionTypes';
 
-function startTimer() {
+export function startTimer(){
     return {
         type: types.START_TIMER
     };
 }
-function restartTimer() {
+export function restartTimer(){
     return {
         type: types.RESTART_TIMER
     };
 }
-function addSecond() {
+export function addSecond(){
     return {
         type: types.ADD_SECOND
     };
