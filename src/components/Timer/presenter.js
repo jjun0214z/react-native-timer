@@ -16,7 +16,6 @@ export default class Timer extends Component {
     }
     componentWillReceiveProps(nextProps) {
         const currentProps = this.props;
-
         if ( !currentProps.isPlaying && nextProps.isPlaying ) {
             currentProps.addSecond();
             const timerInterval = setInterval(() => {
