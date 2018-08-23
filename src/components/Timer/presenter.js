@@ -41,8 +41,7 @@ export default class Timer extends Component {
                     <Time>{formatTime(timerDuration - elapsedTime)}</Time>
                 </Upper>
                 <Lower>
-                    { !isPlaying && <Button iconName="play-circle" onPress={ startTimer } /> }
-                    { isPlaying && <Button iconName="stop-circle" onPress={ restartTimer } /> }
+                    { !isPlaying ? <Button iconName="play-circle" onPress={ startTimer } /> : <Button iconName="stop-circle" onPress={ restartTimer } /> }
                 </Lower>
             </Container>
         );
